@@ -1,0 +1,14 @@
+# csu_theme-js:
+#   filter: rjsmin
+#   output: ckanext-csu_theme/%(version)s-csu_theme.js
+#   contents:
+#     - js/csu_theme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# csu_theme-css:
+#   filter: cssrewrite
+#   output: ckanext-csu_theme/%(version)s-csu_theme.css
+#   contents:
+#     - css/csu_theme.css
