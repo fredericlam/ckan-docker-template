@@ -1,0 +1,27 @@
+body{
+	background:  transparent!important;
+}
+
+.masthead,.account-masthead{
+	background: #1e7fb8 !important;
+}
+
+.account-masthead{
+	border-bottom: solid 1px #000 ;
+}
+
+.site-footer{
+	background: #1e7fb8 !important;
+}
+
+.homepage .module-search .module-content{
+	background-color: #1e7fb8 !important;
+}
+
+.homepage .module-search .tags{
+
+}
+
+.hero,.main{
+	background: #fff !important;
+}
