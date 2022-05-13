@@ -25,3 +25,22 @@ body{
 .hero,.main{
 	background: #fff !important;
 }
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li a:focus, .masthead .navigation .nav-pills li.active a {
+    background-color: #FF7C44!important;
+}
+
+.homepage .module-search .tags ,.media-overlay .media-heading{
+    background-color: #00294F!important;
+}
+
+.btn-primary{
+	background-color: #00294F!important;
+	border-color: #00294F!important;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

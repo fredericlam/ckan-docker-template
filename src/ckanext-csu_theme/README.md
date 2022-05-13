@@ -121,3 +121,35 @@ If ckanext-csu_theme should be available on PyPI you can follow these steps to p
 ## License
 
 [AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
+## Custom
+
+Virtualenv
+----------
+virtualenv --python=/usr/bin/python2.7 --no-site-packages /etc/ckan/default
+. /etc/ckan/default/bin/activate
+
+$ . ~/venv/bin/activate && cd ~/venv/src/ckanext-csu_theme
+$ python setup.py develop
+
+User rights 
+# add user
+$ ckan -c /etc/ckan/production.ini sysadmin add lamf email=lamf@iarc.fr name=LAM
+# grand admin 
+$ ckan -c /etc/ckan/production.ini sysadmin add lamf 
+$ ckan -c /etc/ckan/production.ini seed basic
+$ ckan -c /etc/ckan/production.ini seed family
+$ ckan -c /etc/ckan/production.ini seed gov
+$ ckan -c /etc/ckan/production.ini seed hierarchy
+$ ckan -c /etc/ckan/production.ini seed search
+$ ckan -c /etc/ckan/production.ini seed translations
+$ ckan -c /etc/ckan/production.ini seed user
+$ ckan -c /etc/ckan/production.ini seed vocabs
+
+Known Issues
+------------
+# Accessing virtual machine using docker for mac
+$ docker run -it --rm --privileged --pid=host justincormack/nsenter1
+then 
+$ cd /var/lib/docker/volumes/
+
